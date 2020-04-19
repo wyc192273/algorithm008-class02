@@ -6,7 +6,7 @@
 第一周主要学习了如何计算算法时间复杂度，空间复杂度
 数组，链表，栈，队列 等数据结构
 
-###数组问题：
+##数组问题：
 简单的双指针方式：
 1. P26. 删除排序数组中的重复项: https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/
 
@@ -14,7 +14,7 @@
 
 3. P27. 移除元素: https://leetcode-cn.com/problems/remove-element/
 
-###链表问题：
+##链表问题：
 链表常用的手段：
 反转，递归
 快慢指针确定中点(类似回文字符串题目)

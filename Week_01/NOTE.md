@@ -21,8 +21,7 @@
 
 两数相加问题：https://leetcode-cn.com/problems/add-two-numbers/
 1. 简单的链表依次想加补位问题 ， 时间复杂度 O(max(a,b)) , 空间复杂度：O(max(a,b))
-改良版：如果左侧存高位，右侧存低位
-2. 通过两个栈实现：依次压入两个栈，最后一次出栈相加即可，判断好进位， 时间复杂度O(max(a,b)), 空间复杂度：O(a + b)
+2. 改良版：如果左侧存高位，右侧存低位通过两个栈实现：依次压入两个栈，最后一次出栈相加即可，判断好进位， 时间复杂度O(max(a,b)), 空间复杂度：O(a + b)
 
 反转链表：https://leetcode-cn.com/problems/reverse-linked-list/
 1. 经典的链表问题，考验链表的基本功，指针的指向问题，链表题必会题，单纯的逻辑推导。没什么好讲的，不会就写两遍 时间复杂度:O(n), 空间复杂度： O(1).   
@@ -42,6 +41,7 @@ public ListNode reverseList(ListNode head) {
 反转链表II:https://leetcode-cn.com/problems/reverse-linked-list-ii/
 1. 递归实现这个问题真的很优雅，首先考虑，如果从开始节点，反转n个元素的链表。递归如何写：
 ```java
+ListNode successor = null;
 public ListNode reverseN(ListNode head, int n) {
     if (n == 1) {
         successor = head.next;

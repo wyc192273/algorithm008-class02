@@ -2,7 +2,7 @@
 
 #### 位运算技巧
 n & (n-1)是把n的最低位1置0
-```java
+```text
 //用途：
 //一个数的二进制中有多少位为1
 while（n>0）{
@@ -38,7 +38,7 @@ inOrder(r) = inOrder(r->left)->print r->inOrder(r->right)
 postOrder(r) = postOrder(r->left)->postOrder(r->right)->print r
 ```
 二叉树遍历的时间复杂度是O(n)
-```java
+```text
 ///二叉树中序遍历迭代写法：
 ///https://leetcode-cn.com/problems/binary-tree-inorder-traversal/
 public List<Integer> inorderTraversal(TreeNode root) {
